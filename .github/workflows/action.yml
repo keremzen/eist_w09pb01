@@ -11,6 +11,8 @@ jobs:
 
      - name: Setup phyton
        uses: actions/setup-python@v2
+       with:
+          phyton-version: "3.x"
 
      - name: Check Python version
        run: phyton --version
