@@ -1,0 +1,17 @@
+name: Run action
+
+on: [push]
+
+jobs: 
+  run-action:
+   runs-on: [ubuntu-latest]
+   steps: 
+     - name: Checkout
+       uses: actions/checkout@v2
+
+     - name: Setup phyton
+       uses: actions/setup-python@v2
+
+     - name: Check Python version
+       run: phyton --version
+              
